@@ -14,7 +14,7 @@ app.get('/directions', (req, res) => {
         })
     }
 
-    directions(req.query.startLocation, req.query.destination, (error, { directions }) => {
+    directions(req.query.startLocation, req.query.destination, (error, { directions } = {}) => {
         if(error){
             return res.send({ error })
         }

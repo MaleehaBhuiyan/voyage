@@ -14,9 +14,11 @@
     </ol>
     </p>
     <p> <h4>Technologies Used</h4>
-        • Node.js
-        • Express
-        • Mapquest Directions API
+    <ul>
+    <li>Node.js</li>
+    <li>Express</li>
+    <li>Mapquest Directions API</li>
+    </ul>
     </p>
     <p> <h4>Project Status</h4>
     Currently I have only implemented the directions portion of this application. The work that I have in progress is:

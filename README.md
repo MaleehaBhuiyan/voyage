@@ -13,5 +13,17 @@
         <li>Last but not least, drive safe!</li>
     </ol>
     </p>
+    <p> <h4>Technologies Used</h4>
+        • Node.js
+        • Express
+        • Mapquest Directions API
+    </p>
+    <p> <h4>Project Status</h4>
+    Currently I have only implemented the directions portion of this application. The work that I have in progress is:
+    <ol>
+        <li>Implementing Mapquest Traffic api to get data for thetraffic incidents and trafic flow image.</li>
+        <li>Cleaning up the CSS.</li>
+    </ol>
+    </p>
 
 </div>

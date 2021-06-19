@@ -3,7 +3,8 @@ console.log("Client side js loaded")
 const locations = document.querySelector('form')
 const inputOne = document.querySelector('#startPoint')
 const inputTwo = document.querySelector('#destination')
-const directionsUl = document.querySelector('#directions')
+const directionsDiv = document.querySelector('#directions')
+const directionsList = document.querySelector('ol')
 
 locations.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -14,14 +15,15 @@ locations.addEventListener('submit', (e) => {
     fetch('http://localhost:3000/directions?startLocation=' + startPoint +'&destination=' + destination).then((resp) => {
         resp.json().then((data) => {
         if(data.error){
-            directionsUl.textContent = data.error
+            directionsDiv.innerHTML = data.error
         } else {
+            
+            // directionsH1.innerHTML = `Directions from ${data.startPoint} to ${data.destination}`
+            // directionsH1.append(directionsH1)
 
-            directionsUl.innerHTML = `
-            <li>${data.directions}</li>
-            `
-            console.log(data.directions)
-
+            for(let counter = 1; counter < data.directions.length; counter++){
+                directionsList.innerHTML += `${counter}. ${data.directions[counter]} <br />`
+            }
             
         }
     })

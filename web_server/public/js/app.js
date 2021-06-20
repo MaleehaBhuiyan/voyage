@@ -21,6 +21,8 @@ locations.addEventListener('submit', (e) => {
             // directionsH1.innerHTML = `Directions from ${data.startPoint} to ${data.destination}`
             // directionsH1.append(directionsH1)
 
+            console.log(data)
+
             for(let counter = 1; counter < data.directions.length; counter++){
                 directionsList.innerHTML += `${counter}. ${data.directions[counter]} <br />`
             }

@@ -1,6 +1,8 @@
 const path = require('path')
 const express = require('express')
 const directions = require('./utils/directions')
+const geocode = require('./utils/geocode')
+const incidents = require('./utils/incidents')
 
 const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')

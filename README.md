@@ -7,6 +7,7 @@
     <ol>
         <li>Clone this repo to your device</li>
         <li>Once you are in the directory of this project, cd once again into web_server</li>
+        <li>In the terminal run npm install to install all dependencies</li>
         <li>In the terminal type node src/app.js</li>
         <li>In your browser visit http://localhost:3000/</li>
         <li>At this point, you should have reached the Voyage site on your browser, type in your start point and destination then click go!</li>

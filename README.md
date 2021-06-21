@@ -9,7 +9,7 @@
         <li>Once you are in the directory of this project, cd once again into web_server</li>
         <li>In the terminal type node src/app.js</li>
         <li>In your browser visit http://localhost:3000/</li>
-        <li>At this point, you should have reached the Voyage site on your broweser, type in your start point and destination then click go!</li>
+        <li>At this point, you should have reached the Voyage site on your browser, type in your start point and destination then click go!</li>
         <li>Last but not least, drive safe!</li>
     </ol>
     </p>
